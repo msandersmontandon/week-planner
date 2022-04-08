@@ -10,13 +10,21 @@ var submitButtonEl = document.querySelector('#submit');
 var days = document.querySelector('#days');
 var time = document.querySelector('#time');
 var description = document.querySelector('#description');
+var form = submitButtonEl.closest('form');
 // function show(event, )
+
+// if (localStorage.getItem())
+
+// data = JSON.parse(localStorage.getItem('data-stored'));
 
 entryButtonEl.addEventListener('click', function (event) {
   modal.className = '';
 });
 
 function test(event) {
+  // if (!days.value || !time.value || !description.value) {
+  //   return;
+  // }
   event.preventDefault();
 
   var newEntry = {
@@ -33,8 +41,12 @@ function test(event) {
   event.target.closest('form').reset();
 
 }
+form.addEventListener('submit', test);
 
-submitButtonEl.addEventListener('click', test);
+window.addEventListener('unload', function (event) {
+  event.preventDefault();
+  localStorage.setItem('data-stored', JSON.stringify(data));
+});
 
 // submitButtonEl.addEventListener('submit', function (event) {
 //   debugger;
@@ -48,8 +60,8 @@ submitButtonEl.addEventListener('click', test);
 //   };
 //   console.log(newEntry);
 
-// data.entry.unshift(newEntry);
-// modal.className = 'hidden';
-// event.target.reset();
+//   data.entry.unshift(newEntry);
+//   modal.className = 'hidden';
+//   event.target.reset();
 
 // });
