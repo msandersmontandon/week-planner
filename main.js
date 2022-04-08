@@ -1,3 +1,8 @@
+var data = {
+  entry: [],
+  nextEntryId: 1,
+  editing: null
+};
 
 var modal = document.querySelector('[data-view="modal"]');
 var entryButtonEl = document.querySelector('#entry');
