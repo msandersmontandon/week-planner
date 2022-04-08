@@ -29,41 +29,43 @@
       </div>
       <div class="row justify-center">
         <div class="column-full text-center add-entry">
-          <button>Add Entry</button>
+          <button id="entry">Add Entry</button>
         </div>
       </div>
     </div>
 
-    <div class="modal">
+    <div data-view="modal" class="hidden">
       <div class="overlay">
         <div class="entry-modal">
           <div class="row">
-            <h1 class="column-full">Add Entry</h1>
-            <div class="row">
-              <div class="column-full">
-                <form action="" class="row">
-                  <div class="column-full">
-                    <select name="days" id="days">
-                      <option value="Placeholder">Days of Week</option>
-                      <option value="">Monday</option>
-                      <option value="">Tuesday</option>
-                      <option value="">Wednesday</option>
-                      <option value="">Thursday</option>
-                      <option value="">Friday</option>
-                      <option value="">Saturday</option>
-                      <option value="">Sunday</option>
-                    </select>
-                    <select name="Times" id="Time">
-                      <option value="">Time</option>
-                      <option value="">12:00</option>
-                      <option value="">03:00</option>
-                      <option value="">06:00</option>
-                      <option value="">09:00</option>
-                    </select>
-                  </div>
-                  <textarea class="block" name="" id="" placeholder="Description"></textarea>
-                  <div class="column-full text-right"><button class="" type="submit">Submit</button></div>
-                </form>
+            <div class="column-full modal-padding">
+            <h1>Add Entry</h1>
+              <div class="row">
+                <div class="column-full">
+                  <form action="" class="row">
+                    <div class="column-full">
+                      <select name="days" id="days">
+                        <option value="Placeholder">Days of Week</option>
+                        <option value="">Monday</option>
+                        <option value="">Tuesday</option>
+                        <option value="">Wednesday</option>
+                        <option value="">Thursday</option>
+                        <option value="">Friday</option>
+                        <option value="">Saturday</option>
+                        <option value="">Sunday</option>
+                      </select>
+                      <select name="Times" id="Time">
+                        <option value="">Time</option>
+                        <option value="">12:00</option>
+                        <option value="">03:00</option>
+                        <option value="">06:00</option>
+                        <option value="">09:00</option>
+                      </select>
+                    </div>
+                    <textarea class="block width-100" name="" id="" placeholder="Description"></textarea>
+                    <div class="column-full text-right"><button class="" type="submit">Submit</button></div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
