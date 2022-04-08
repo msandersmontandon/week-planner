@@ -39,13 +39,13 @@
         <div class="entry-modal">
           <div class="row">
             <div class="column-full modal-padding">
-            <h1>Add Entry</h1>
+              <h1>Add Entry</h1>
               <div class="row">
                 <div class="column-full">
                   <form action="" class="row">
                     <div class="column-full">
-                      <select name="days" id="days">
-                        <option value="Placeholder">Days of Week</option>
+                      <select required name="days" id="days">
+                        <option value="">Days of Week</option>
                         <option value="monday">Monday</option>
                         <option value="tuesday">Tuesday</option>
                         <option value="wednesday">Wednesday</option>
@@ -54,15 +54,15 @@
                         <option value="saturday">Saturday</option>
                         <option value="sunday">Sunday</option>
                       </select>
-                      <select name="Times" id="Time">
-                        <option value="Placeholder">Time</option>
+                      <select required name="time" id="time">
+                        <option value="">Time</option>
                         <option value="">12:00</option>
                         <option value="">03:00</option>
                         <option value="">06:00</option>
                         <option value="">09:00</option>
                       </select>
                     </div>
-                    <textarea class="block width-100" name="" id="" placeholder="Description"></textarea>
+                    <textarea required class="block width-100" name="" id="description" placeholder="Description"></textarea>
                     <div class="column-full text-right"><button id="submit" class="" type="submit">Submit</button></div>
                   </form>
                 </div>
