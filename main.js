@@ -16,15 +16,40 @@ entryButtonEl.addEventListener('click', function (event) {
   modal.className = '';
 });
 
-submitButtonEl.addEventListener('submit', function (event) {
+function test(event) {
   event.preventDefault();
+
   var newEntry = {
     day: days.value,
-    time: time.value,
+    times: time.value,
     description: description.value,
     id: data.nextEntryId++
   };
-  data.entry.unshift(newEntry);
+  console.log(newEntry);
+  console.log('bang');
   modal.className = 'hidden';
-  event.target.reset();
-});
+  data.entry.unshift(newEntry);
+  // event.target.closest('form').submit();
+  event.target.closest('form').reset();
+
+}
+
+submitButtonEl.addEventListener('click', test);
+
+// submitButtonEl.addEventListener('submit', function (event) {
+//   debugger;
+
+//   event.target.closest('form').preventDefault();
+//   var newEntry = {
+//     day: days.value,
+//     time: time.value,
+//     description: description.value,
+//     id: data.nextEntryId++
+//   };
+//   console.log(newEntry);
+
+// data.entry.unshift(newEntry);
+// modal.className = 'hidden';
+// event.target.reset();
+
+// });
