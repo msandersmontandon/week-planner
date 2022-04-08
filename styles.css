@@ -8,6 +8,7 @@
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column-full {
@@ -41,8 +42,23 @@
   right: 0;
   left: 0;
   background-color: rgba(14, 13, 13, 0.753);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.block {
+  display: block;
+}
+
+.entry-modal {
+  background-color: white;
+}
+
+.text-right {
+  text-align: right;
 }

@@ -34,32 +34,37 @@
       </div>
     </div>
 
-    <div class="modal hidden">
+    <div class="modal">
       <div class="overlay">
         <div class="entry-modal">
           <div class="row">
             <h1 class="column-full">Add Entry</h1>
             <div class="row">
-              <form action="">
-                <select name="days" id="days">
-                  <option value="Placeholder">Days of Week</option>
-                  <option value="">Monday</option>
-                  <option value="">Tuesday</option>
-                  <option value="">Wednesday</option>
-                  <option value="">Thursday</option>
-                  <option value="">Friday</option>
-                  <option value="">Saturday</option>
-                  <option value="">Sunday</option>
-                </select>
-                <select name="Times" id="Time">
-                  <option value="">Time</option>
-                  <option value="">12:00</option>
-                  <option value="">03:00</option>
-                  <option value="">06:00</option>
-                  <option value="">09:00</option>
-                </select>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
-              </form>
+              <div class="column-full">
+                <form action="" class="row">
+                  <div class="column-full">
+                    <select name="days" id="days">
+                      <option value="Placeholder">Days of Week</option>
+                      <option value="">Monday</option>
+                      <option value="">Tuesday</option>
+                      <option value="">Wednesday</option>
+                      <option value="">Thursday</option>
+                      <option value="">Friday</option>
+                      <option value="">Saturday</option>
+                      <option value="">Sunday</option>
+                    </select>
+                    <select name="Times" id="Time">
+                      <option value="">Time</option>
+                      <option value="">12:00</option>
+                      <option value="">03:00</option>
+                      <option value="">06:00</option>
+                      <option value="">09:00</option>
+                    </select>
+                  </div>
+                  <textarea class="block" name="" id="" placeholder="Description"></textarea>
+                  <div class="column-full text-right"><button class="" type="submit">Submit</button></div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
