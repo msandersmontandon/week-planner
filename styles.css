@@ -21,6 +21,7 @@ textarea {
 
 .column-7th {
   flex-basis: calc(100% / 7);
+  padding: 2rem;
 }
 
 .justify-center {
@@ -73,4 +74,21 @@ textarea {
 
 .modal-padding {
   padding: 1rem 2rem;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+tr {
+  height: 1rem;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(210 210 210);
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
 }

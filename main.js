@@ -1,3 +1,4 @@
+/* */
 var data = {
   entry: [],
   nextEntryId: 1,
@@ -13,9 +14,9 @@ var description = document.querySelector('#description');
 var form = submitButtonEl.closest('form');
 // function show(event, )
 
-// if (localStorage.getItem())
-
-// data = JSON.parse(localStorage.getItem('data-stored'));
+if (localStorage.getItem('data-stored')) {
+  data = JSON.parse(localStorage.getItem('data-stored'));
+}
 
 entryButtonEl.addEventListener('click', function (event) {
   modal.className = '';
