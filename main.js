@@ -66,3 +66,25 @@ window.addEventListener('unload', function (event) {
 //   event.target.reset();
 
 // });
+
+var spanEl = document.querySelector('span');
+
+var tableRows = document.querySelectorAll('tbody > tr');
+
+var viewByDayButtons = document.querySelector('#viewByDayButtons');
+
+function viewByDayButtonFx(event) {
+  if (event.target.tagName === 'BUTTON') {
+    spanEl.textContent = event.target.textContent;
+
+    for (var i = 0; i < data.entry.length; i++) {
+      if (data.entry[i].day === event.target.textContent) {
+
+      }
+    }
+
+  }
+
+}
+
+viewByDayButtons.addEventListener('click', viewByDayButtonFx);
